@@ -1,0 +1,1 @@
+(prop("진행률") / 100 >= 1) ? "✅" : format(replaceAll(slice("xxxxxxxxxx", 0, floor(prop("진행률") / 10)), "x", "◼") + format(replaceAll(slice("xxxxxxxxxx", 0, ceil(10 - prop("진행률") / 10)), "x", "◻")))
